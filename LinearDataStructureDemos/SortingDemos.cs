@@ -20,6 +20,7 @@ namespace LinearDataStructureDemos
             {
                 case (int)Sort.Bubble: BubbleSort(); break;
                 case (int)Sort.Selection: SelectionSort(); break;
+                case (int)Sort.Insertion: Console.WriteLine("Insertion sort is not implemented yet."); break;
                 case (int)Sort.Shell: ShellSort(); break;
 
             }
