@@ -20,7 +20,7 @@ namespace LinearDataStructureDemos
             {
                 case (int)Sort.Bubble: BubbleSort(); break;
                 case (int)Sort.Selection: SelectionSort(); break;
-                case (int)Sort.Insertion: Console.WriteLine("Insertion sort is not implemented yet."); break;
+                case (int)Sort.Insertion: InsertionSort() ; break;
                 case (int)Sort.Shell: ShellSort(); break;
 
             }
@@ -61,7 +61,21 @@ namespace LinearDataStructureDemos
 
             }
         }
-
+        static void InsertionSort()
+        {
+            int temp;
+            for (int i = 1; i < num.Length; i++)
+            {
+                temp = num[i];
+                int j = i - 1;
+                while (j >= 0 && temp < num[j])
+                {
+                    num[j + 1] = num[j];
+                    j--;
+                }
+                num[j + 1] = temp;
+            }
+        }
         static void ShellSort()
         {
             int n = num.Length;
