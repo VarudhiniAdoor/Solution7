@@ -10,7 +10,7 @@ namespace LinearDataStructureDemos
 
     internal class SortingDemos
     {
-        static int[] num = [12, 23, 34, 11, 35, 11, 9, 5, 6, 3, 1, 10];
+        static int[] num = [12, 23, 34, 11, 35, 11, 9, 5, 6, 3, 1];
         static void Main()
         {
             DisplayElements();
